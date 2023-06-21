@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import sys
 from langchain.chains import RetrievalQA
@@ -8,7 +9,7 @@ from langchain.indexes import VectorstoreIndexCreator
 from langchain.vectorstores import Chroma
 import constants
 
-os.environ["OPENAI_API_KEY"] = constants.APIKEY
+os.environ["OPENAI_API_KEY"] = constants.API_KEY
 
 CACHE = False
 query = sys.argv[1]
